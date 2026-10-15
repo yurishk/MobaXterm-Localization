@@ -66,7 +66,28 @@ python tools/localize.py init-language --source inputs/MobaXterm.exe --locale ja
 - JSON 中用 `\r\n` 表达原文换行。使用 UTF-8 文件和有效 Unicode；不可见控制字符、丢失字符及孤立代理字符会影响构建或显示。
 - `&` 常用于菜单助记键。修改助记键时，检查同一菜单是否冲突。
 
-框架只修改 `Caption`、`Hint`、`Title` 等展示属性以及 Windows 字符串表；不修改输入框的 `Text`、下拉框的 `Items.Strings`、事件处理器、连接参数或程序代码。把同样的字符串放进词典也不能扩大这个修改范围。
+框架修改 `Caption`、`Hint`、`Title` 等展示属性以及 Windows 字符串表；另外允许版本清单中明确核对过的两个搜索占位框的初始 `Text`。其他输入框、下拉框 `Items.Strings`、事件处理器和连接参数不在修改范围内。
+
+### 工具栏和主页的运行时常量
+
+部分文字没有放在 DFM 资源中，而是 Delphi 静态 ANSI 字符串。`extract` 会同时导出经过核对的 `LITERAL|...` 上下文及 `capacity_bytes`。模板默认包含 `"runtime_encoding": null`，表示保留这些位置的英文；资源翻译仍正常生效。
+
+要翻译这些位置，请把 `runtime_encoding` 设置为目标 Windows 非 Unicode 程序使用的代码页，例如简体中文 `cp936`、日语 `cp932`。它只是编译目标文字的编码选项，不会修改 Windows 设置；不匹配的运行环境可能显示乱码。若暂时不处理这些限制，可保持 `null`。
+
+这类译文编码后的字节数不能超过原字符串容量。超长会明确报错，不会截断，也不会扩写到相邻指令。可以用较短的上下文译文解决，例如中文 `New tab` 的通用译文太长，而工具栏使用较短标签：
+
+```json
+{
+  "LITERAL|toolbar.new_tab": {
+    "source": "New tab",
+    "target": "新标签"
+  }
+}
+```
+
+将此对象内部条目加入 `overrides`，保留其他上下文译文。没有填写的运行时条目保留英文，不回退为中文。代码页无法表示的字符也会报错。
+
+运行时显示常量的偏移和原文记录在 `config/runtime-26.5.json`，与受支持的原版 SHA-256 绑定。不要为翻译其他语言随意添加二进制偏移；新位置需要先核对其展示用途和引用。会话树根节点及对应查找使用相同的 `User sessions` 译文，以保持名称一致。
 
 ## 6. 检查、构建和查看报告
 
@@ -79,7 +100,7 @@ python tools/localize.py build --source inputs/MobaXterm.exe --locale ja-JP --ou
 
 | 文件 | 内容 |
 | --- | --- |
-| `*.build.json` | 原版/成品/词典哈希、版本、修改统计和验证结果 |
+| `*.build.json` | 原版/成品/词典哈希、版本、修改统计、运行时字符串槽位及验证结果 |
 | `*.translations.json` | 每处实际应用的译文及上下文 |
 | `*.remaining.json` | 保留的资源文字，包含专名、协议名和内部占位文字 |
 

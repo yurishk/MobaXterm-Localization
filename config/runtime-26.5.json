@@ -1,0 +1,581 @@
+{
+  "schema_version": 1,
+  "source_sha256": "f0e77836182fe52e66c68f88fbe13801f935f100623103df1d8be2181294e8e5",
+  "format": "delphi-ansi-static",
+  "literals": [
+    {
+      "id": "toolbar.session",
+      "offset": "0x505208",
+      "source": "Session",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.servers",
+      "offset": "0x505218",
+      "source": "Servers",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.tools",
+      "offset": "0x505228",
+      "source": "Tools",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.games",
+      "offset": "0x505238",
+      "source": "Games",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.sessions",
+      "offset": "0x505248",
+      "source": "Sessions",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.view",
+      "offset": "0x50525c",
+      "source": "View",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.split",
+      "offset": "0x50526c",
+      "source": "Split",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.multiexec",
+      "offset": "0x50527c",
+      "source": "MultiExec",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.tunneling",
+      "offset": "0x505290",
+      "source": "Tunneling",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.packages",
+      "offset": "0x5052a4",
+      "source": "Packages",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.settings",
+      "offset": "0x5052b8",
+      "source": "Settings",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.help",
+      "offset": "0x5052cc",
+      "source": "Help",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.new_tab",
+      "offset": "0x5052dc",
+      "source": "New tab",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.close",
+      "offset": "0x5052ec",
+      "source": "Close",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.save",
+      "offset": "0x5052fc",
+      "source": "Save",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.fullscreen",
+      "offset": "0x50530c",
+      "source": "Fullscreen",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.print",
+      "offset": "0x505320",
+      "source": "Print",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.zoom_in",
+      "offset": "0x505330",
+      "source": "Zoom in",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.zoom_out",
+      "offset": "0x505340",
+      "source": "Zoom out",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.detach",
+      "offset": "0x505354",
+      "source": "Detach",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.cycle",
+      "offset": "0x505364",
+      "source": "Cycle",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.sidebar",
+      "offset": "0x505374",
+      "source": "Sidebar",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.home",
+      "offset": "0x505384",
+      "source": "Home",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.macro",
+      "offset": "0x505394",
+      "source": "Macro",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.shortkeys",
+      "offset": "0x5053a4",
+      "source": "Shortkeys",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.duplicate",
+      "offset": "0x5053c4",
+      "source": "Duplicate",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.find",
+      "offset": "0x5053d8",
+      "source": "Find",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.set_title",
+      "offset": "0x5053e8",
+      "source": "Set title",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.list_ports",
+      "offset": "0x50541c",
+      "source": "List ports",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.textedit",
+      "offset": "0x505430",
+      "source": "TextEdit",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.tasks_list",
+      "offset": "0x505444",
+      "source": "Tasks list",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.systray",
+      "offset": "0x505474",
+      "source": "Systray",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.x_server",
+      "offset": "0x505484",
+      "source": "X server",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "toolbar.exit",
+      "offset": "0x505498",
+      "source": "Exit",
+      "section": "CODE",
+      "purpose": "Toolbar customization choices (TTopBtn table); main button labels are restored from the declared DFM HelpKeyword fields"
+    },
+    {
+      "id": "home.1",
+      "offset": "0x54ac04",
+      "source": "Start local terminal",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "home.2",
+      "offset": "0x54ac24",
+      "source": "New session",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "home.3",
+      "offset": "0x54ac38",
+      "source": "List of previous sessions:",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "home.4",
+      "offset": "0x54ac98",
+      "source": "Recover previous sessions",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "home.5",
+      "offset": "0x54ace0",
+      "source": "Welcome to MobaXterm\r\rPress <return> to start a local terminal",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "home.6",
+      "offset": "0x54ad28",
+      "source": "Welcome to MobaXterm\r\rPress <return> to start a new session",
+      "section": "CODE",
+      "purpose": "Home page button, session list heading or welcome text"
+    },
+    {
+      "id": "session_tree.user_sessions.1",
+      "offset": "0x5b39c8",
+      "source": "User sessions",
+      "section": "CODE",
+      "purpose": "Session tree root caption and corresponding tree-node lookups; all occurrences must use the same translation"
+    },
+    {
+      "id": "session_tree.user_sessions.2",
+      "offset": "0x5ca6f8",
+      "source": "User sessions",
+      "section": "CODE",
+      "purpose": "Session tree root caption and corresponding tree-node lookups; all occurrences must use the same translation"
+    },
+    {
+      "id": "session_tree.user_sessions.3",
+      "offset": "0x5de100",
+      "source": "User sessions",
+      "section": "CODE",
+      "purpose": "Session tree root caption and corresponding tree-node lookups; all occurrences must use the same translation"
+    },
+    {
+      "id": "session_tree.user_sessions.4",
+      "offset": "0x5e0960",
+      "source": "User sessions",
+      "section": "CODE",
+      "purpose": "Session tree root caption and corresponding tree-node lookups; all occurrences must use the same translation"
+    },
+    {
+      "id": "session_tree.user_sessions.5",
+      "offset": "0x5e0bbc",
+      "source": "User sessions",
+      "section": "CODE",
+      "purpose": "Session tree root caption and corresponding tree-node lookups; all occurrences must use the same translation"
+    },
+    {
+      "id": "quick_connect.action",
+      "offset": "0x5c6590",
+      "source": "Quick connect",
+      "section": "CODE",
+      "purpose": "Quick-connect action display caption"
+    }
+  ],
+  "form_fields": [
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/PanIce1/sPanel12/EdSearch|Text",
+      "source": "  Quick connect...",
+      "purpose": "Initial quick-connect placeholder, not user input"
+    },
+    {
+      "anchor": "DFM|TFRAMEHOME|/FrameHome/sPanel1/PanelHome/Panel1/EdSearch|Text",
+      "source": " Find existing session or server name...",
+      "purpose": "Initial home-page search placeholder, not user input"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnPrint|HelpKeyword",
+      "source": "Print",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnPrint|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSave|HelpKeyword",
+      "source": "Save",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSave|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnNewSession|HelpKeyword",
+      "source": "Session",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnNewSession|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnHelp|HelpKeyword",
+      "source": "Help",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnHelp|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnColor|HelpKeyword",
+      "source": "Settings",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnColor|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/ToolButton2|HelpKeyword",
+      "source": "View",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/ToolButton2|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMultiExec|HelpKeyword",
+      "source": "MultiExec",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMultiExec|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSplitMode|HelpKeyword",
+      "source": "Split",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSplitMode|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMenuComdes|HelpKeyword",
+      "source": "Tools",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMenuComdes|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnBookmarks|HelpKeyword",
+      "source": "Sessions",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnBookmarks|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnNewTab|HelpKeyword",
+      "source": "New tab",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnNewTab|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSidebar|HelpKeyword",
+      "source": "Sidebar",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSidebar|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnGames|HelpKeyword",
+      "source": "Games",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnGames|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnUnzoom|HelpKeyword",
+      "source": "Zoom out",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnUnzoom|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnZoom|HelpKeyword",
+      "source": "Zoom in",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnZoom|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDetachTab|HelpKeyword",
+      "source": "Detach",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDetachTab|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnCycle|HelpKeyword",
+      "source": "Cycle",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnCycle|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTunneling|HelpKeyword",
+      "source": "Tunneling",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTunneling|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnServices|HelpKeyword",
+      "source": "Servers",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnServices|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnHome|HelpKeyword",
+      "source": "Home",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnHome|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMacros|HelpKeyword",
+      "source": "Macro",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMacros|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFullscreen|HelpKeyword",
+      "source": "Fullscreen",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFullscreen|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnShortkeys|HelpKeyword",
+      "source": "Shortkeys",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnShortkeys|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDoc|HelpKeyword",
+      "source": "Doc",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDoc|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDuplicate|HelpKeyword",
+      "source": "Duplicate",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDuplicate|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFindInTerminal|HelpKeyword",
+      "source": "Find",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFindInTerminal|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSetTitle|HelpKeyword",
+      "source": "Set title",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSetTitle|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnCloseTab|HelpKeyword",
+      "source": "Close",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnCloseTab|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton19|HelpKeyword",
+      "source": "Ctris",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton19|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton20|HelpKeyword",
+      "source": "Tcpdump",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton20|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton21|HelpKeyword",
+      "source": "List ports",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/sSpeedButton21|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTextEditor|HelpKeyword",
+      "source": "TextEdit",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTextEditor|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTaskList|HelpKeyword",
+      "source": "Tasks list",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTaskList|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFvwm2|HelpKeyword",
+      "source": "Fvwm2",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnFvwm2|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTwm2|HelpKeyword",
+      "source": "Twm2",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnTwm2|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDwm|HelpKeyword",
+      "source": "Dwm",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnDwm|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMobapt|HelpKeyword",
+      "source": "Packages",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMobapt|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSystray|HelpKeyword",
+      "source": "Systray",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnSystray|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/sBitBtn7|HelpKeyword",
+      "source": "X server",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/sBitBtn7|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    },
+    {
+      "anchor": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnClose|HelpKeyword",
+      "source": "Exit",
+      "mirror_of": "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnClose|Caption",
+      "purpose": "Layout routine at VA 0x99A148 reads HelpKeyword (+0x154) and restores Caption through VA 0x47AE30; keep this pair translated together"
+    }
+  ]
+}

@@ -1172,7 +1172,7 @@
     "Record a new standard macro\r\n(eveything that I type inside terminal-based sessions will be recorded)": "录制一个新的标准宏\r\n(在基于终端的会话中输入的所有内容会被录制)",
     "Record macro": "录制宏",
     "Record new macro": "录制新宏",
-    "Recover previous sessions": "恢复先前的会话",
+    "Recover previous sessions": "恢复上次会话",
     "Red": "红色",
     "Red :": "红色 :",
     "Redirect WebAuthn requests from the remote session to this local device, allowing authentication with Windows Hello for Business or security keys": "将远程会话的 WebAuthn 请求重定向到本地设备，以便使用 Windows Hello 企业版或安全密钥进行认证",
@@ -1785,7 +1785,60 @@
     "minutes": "分钟",
     "or use Ctrl+SPACE in order to display the popup macros menu": "或使用 Ctrl+SPACE 来显示弹出式宏菜单",
     "seconds": "秒",
-    "version 0.0": "版本 0.0"
+    "version 0.0": "版本 0.0",
+    "User sessions": "用户会话",
+    "Quick connect": "快速连接",
+    "  Quick connect...": "  快速连接…",
+    " Find existing session or server name...": " 查找已有会话或服务器名称…",
+    "List of previous sessions:": "上次打开的会话：",
+    "Welcome to MobaXterm\r\rPress <return> to start a local terminal": "欢迎使用 MobaXterm\r\r按 <return> 启动本地终端",
+    "Welcome to MobaXterm\r\rPress <return> to start a new session": "欢迎使用 MobaXterm\r\r按 <return> 新建会话"
   },
-  "overrides": {}
+  "overrides": {
+    "LITERAL|toolbar.new_tab": {
+      "source": "New tab",
+      "target": "新标签"
+    },
+    "LITERAL|toolbar.zoom_in": {
+      "source": "Zoom in",
+      "target": "放大"
+    },
+    "LITERAL|toolbar.home": {
+      "source": "Home",
+      "target": "主页"
+    },
+    "LITERAL|toolbar.systray": {
+      "source": "Systray",
+      "target": "托盘"
+    },
+    "LITERAL|toolbar.packages": {
+      "source": "Packages",
+      "target": "软件包"
+    },
+    "LITERAL|toolbar.view": {
+      "source": "View",
+      "target": "查看"
+    },
+    "LITERAL|toolbar.sessions": {
+      "source": "Sessions",
+      "target": "会话夹"
+    },
+    "DFM|TFORMXTERM|/FormXterm/sPanel4/ToolButton2|Caption": {
+      "source": "View",
+      "target": "查看"
+    },
+    "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnBookmarks|Caption": {
+      "source": "Sessions",
+      "target": "会话夹"
+    },
+    "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnMobapt|Caption": {
+      "source": "Packages",
+      "target": "软件包"
+    },
+    "DFM|TFORMXTERM|/FormXterm/sPanel4/BtnHome|Caption": {
+      "source": "Home",
+      "target": "主页"
+    }
+  },
+  "runtime_encoding": "cp936"
 }

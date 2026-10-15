@@ -8,7 +8,7 @@ import zipfile
 from pathlib import Path
 
 from core import (PROJECT, LOCALE, catalog, load_json, load_language, plan, profile_for,
-                  remove_signature, save_json, sha256, verify)
+                  remove_signature, save_json, sha256, verify, runtime_plan, patch_literal_bytes)
 from pe_resources import update_resources
 
 def copy_optional_document(source, destination):
@@ -27,6 +27,9 @@ def build(source, language_path, output, force=False):
     profile = profile_for(source)
     language = load_language(language_path, profile)
     updates, applied, remaining = plan(source, language)
+    literal_changes, literal_applied, literal_remaining = runtime_plan(source, language)
+    applied += literal_applied
+    remaining += literal_remaining
     if not applied:
         raise ValueError('No translated text applies to this source; fill in the language dictionary first')
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -36,18 +39,27 @@ def build(source, language_path, output, force=False):
     try:
         shutil.copyfile(source, temporary)
         update_resources(temporary, updates)
+        if literal_changes:
+            temporary.write_bytes(patch_literal_bytes(temporary.read_bytes(), literal_changes))
         remove_signature(temporary)
-        hashes = verify(source, temporary, updates)
+        hashes = verify(source, temporary, updates, literal_changes)
         report = {'version': profile['version'], 'locale': language['locale'],
                   'source_sha256': profile['source_sha256'], 'output_sha256': sha256(temporary.read_bytes()),
                   'language_sha256': sha256(Path(language_path).read_bytes()),
                   'changed_resources': len(updates), 'translated_texts': len(applied),
                   'translated_form_texts': sum(x['anchor'].startswith('DFM|') for x in applied),
                   'translated_stringtable_entries': sum(x['anchor'].startswith('STRINGTABLE|') for x in applied),
+                  'translated_runtime_literals': len(literal_changes),
+                  'runtime_encoding': language.get('runtime_encoding'),
+                  'runtime_text_slots': [{'anchor': c['anchor'], 'file_offset': hex(c['offset']),
+                                          'byte_count': len(c['before']),
+                                          'before_hex': c['before'].hex(), 'after_hex': c['after'].hex()}
+                                         for c in literal_changes],
                   'unchanged_entries_including_names_and_tokens': len(remaining),
                   'non_resource_section_sha256': hashes,
                   'validation': ['supported source hash', 'DFM round-trip', 'format placeholders',
-                                 'resource inventory and unchanged resources', 'byte-identical non-resource sections'],
+                                 'resource inventory and unchanged resources',
+                                 'non-resource sections identical outside approved text-literal slots'],
                   'signature': 'modified copy is unsigned', 'ui_testing': 'not performed by this build command'}
         os.replace(temporary, output)
     finally:
@@ -138,6 +150,7 @@ def main(argv=None):
                 raise ValueError('Invalid locale identifier')
             save_json(args.output, {'schema_version': 1, 'locale': args.locale, 'name': args.name,
                                    'source_sha256': profile['source_sha256'],
+                                   'runtime_encoding': None,
                                    'strings': {s: '' for s in sorted({e['source'] for e in entries})}, 'overrides': {}})
         print(f'Written: {args.output}')
     elif args.command == 'package':
@@ -147,7 +160,9 @@ def main(argv=None):
         language = load_language(language_path, profile)
         if args.command == 'check':
             updates, applied, remaining = plan(args.source, language)
-            print(f"{language['locale']}: {len(applied)} translated entries in {len(updates)} resources; {len(remaining)} unchanged entries (includes names and tokens)")
+            changes, literal_applied, literal_remaining = runtime_plan(args.source, language)
+            print(f"{language['locale']}: {len(applied)} resource texts + {len(changes)} runtime literals; "
+                  f"{len(remaining)+len(literal_remaining)} unchanged entries (includes names and tokens)")
         else:
             report = build(args.source, language_path, args.output, args.force)
             print(f"Built {report['locale']}: {report['translated_texts']} translated entries -> {args.output}")

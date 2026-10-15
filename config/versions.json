@@ -13,7 +13,8 @@
       "plugins": {
         "CygUtils.plugin": "94216d3d9265296feeb5c0009af5aaff2fd2fdb8693076f291b552b91bdaad82",
         "CygUtils64.plugin": "df8c12a3aa748fa4e8a24278fd0a98deede836bb9d34b6ac21f2a1877943fbb2"
-      }
+      },
+      "runtime_text": "runtime-26.5.json"
     }
   }
 }
