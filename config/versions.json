@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "release_locales": [
+    "zh-CN"
+  ],
+  "versions": {
+    "26.5": {
+      "version": "26.5",
+      "build": "5542",
+      "edition": "Home",
+      "source_sha256": "f0e77836182fe52e66c68f88fbe13801f935f100623103df1d8be2181294e8e5",
+      "upstream_url": "https://mobaxterm.mobatek.net/download-home-edition.html",
+      "plugins": {
+        "CygUtils.plugin": "94216d3d9265296feeb5c0009af5aaff2fd2fdb8693076f291b552b91bdaad82",
+        "CygUtils64.plugin": "df8c12a3aa748fa4e8a24278fd0a98deede836bb9d34b6ac21f2a1877943fbb2"
+      }
+    }
+  }
+}
